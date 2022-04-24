@@ -1,4 +1,8 @@
 # timestables.py
-A multiplication game in python that is solved by voice recognition
-Using tkinter, speechRecognition, and pyAudio, the computer randomly generates two numbers, from 1-10.
-Once given the two randomly generated numbers, the user is given 3 seconds to say their answer into a mic. If correct, they are awarded one point. If incorrect, they  are given 0 points. This loops for 10 times. 
+
+A multiplications game that is solved with voice recognition utilizing tkinter, pyAudio, and speech_recognition modules. The user is asked to input the amount of times or rounds they would like to practice. They are then asked to 
+input two numbers: the starting number and ending number or the range they would like to practice. 
+After pressing the "Start" button, two numbers are randomly generated in the range given by the user and are given 3 seconds to answer into a mic. If correct, the user is awarded one point. 
+After the game has ended, they are shown their final score. 
+
+Microphone must be used and must be the default input for the system. 
