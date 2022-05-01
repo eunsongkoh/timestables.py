@@ -1,3 +1,8 @@
+"""
+Due to too many hardware problems and lack of time, this code will be used to further expand the project. 
+Instead of using user input, the program will use the user's voice for an answer when prompted. 
+"""
+
 import speech_recognition as sr
 from front import rounds, firstNumber, endNumber
 import tkinter as tk
