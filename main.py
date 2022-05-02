@@ -1,4 +1,3 @@
-import _tkinter
 import tkinter as tk
 import random
 # from .back2 import calculations
