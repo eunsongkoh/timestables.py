@@ -1,10 +1,9 @@
-"""
-Due to many hardware problems, this code will be used in the future to further expand the project. 
-Instead of using user input, the program will use the user's voice for an answer when prompted. 
-"""
 
+"""
+To be later implemented into the front end code
+"""
 import speech_recognition as sr
-from front import rounds, firstNumber, endNumber
+# from front import rounds, firstNumber, endNumber
 import tkinter as tk
 
 import random
@@ -43,12 +42,14 @@ getAudio uses speech recognition
 pre: none 
 post: returns the final mic input of the human   
 """
-def getAudio():
-    # instance of the class
-    r = sr.Recognizer()
+class audioGet(sr):
+    def __init__(self):
+        def getAudio(self):
+            # instance of the class
+            self.r = sr.Recognizer()
 
     # instance of microphone class
-    micInput  = sr.Microphone()
+        micInput  = sr.Microphone()
 
     with sr.Microphone() as source:
         # IF BACKGROUND NOISE IS AN ISSUE: r.adjust_for_ambient_noise(source, duration=5)
@@ -78,7 +79,9 @@ def getAudio():
     # returns the answer of the user
     return userAnswer
 
-
+"""
+Checks whether the inputed answer is correct 
+"""
 def check(finalCalc, userAnswer):
     if finalCalc == userAnswer:
         print("correct")
@@ -87,6 +90,7 @@ def check(finalCalc, userAnswer):
     else:
         print("no")
 
+# prints the acmount of points
 def points(counter):
     print(counter)
 
@@ -96,3 +100,4 @@ for i in range(1, rounds):
     getAudio()
     check(finalCalc, userAnswer)
     points(counter)
+
